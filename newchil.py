@@ -1,0 +1,10 @@
+name = input("名前を入力してください： ")
+age = input("年齢を入力してください： ")
+gender = input("性別を入力してください： ")
+address = input("住まいの地域を入力してください： ")
+
+print("以下の情報で登録が完了しました。")
+print("名前：", name)
+print("年齢：", age)
+print("性別：", gender)
+print("住所：", address)
