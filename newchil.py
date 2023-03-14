@@ -1,10 +1,18 @@
-name = input("名前を入力してください： ")
-age = input("年齢を入力してください： ")
-gender = input("性別を入力してください： ")
-address = input("住まいの地域を入力してください： ")
+ # ユーザーからの入力を受け取る
+input_str = input("新規登録する場合は、「新規登録」と入力してください： ")
 
-print("以下の情報で登録が完了しました。")
-print("名前：", name)
-print("年齢：", age)
-print("性別：", gender)
-print("住所：", address)
+# 「新規登録」と入力されたら、氏名、年齢、性別、住所の地域を入力させる
+if input_str == "新規登録":
+    name = input("氏名を入力してください： ")
+    age = input("年齢を入力してください： ")
+    gender = input("性別を入力してください（男性、女性、その他）： ")
+    region = input("住まいの地域を入力してください： ")
+
+    # 入力された情報を表示する
+    print("氏名： ", name)
+    print("年齢： ", age)
+    print("性別： ", gender)
+    print("住所： ", region)
+else:
+    # 「新規登録」と入力されなかった場合は、メッセージを表示する
+    print("新規登録がキャンセルされました。")
